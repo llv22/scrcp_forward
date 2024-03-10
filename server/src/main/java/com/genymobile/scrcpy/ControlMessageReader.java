@@ -170,6 +170,8 @@ public class ControlMessageReader {
         float pressure = Binary.u16FixedPointToFloat(buffer.getShort());
         int actionButton = buffer.getInt();
         int buttons = buffer.getInt();
+//        Ln.w(String.format("parseInjectTouchEvent - action:%d, pointerId: %d, position: %s, pressure: %f, actionButton: %d, buttons: %d",
+//                action, pointerId, position, pressure, actionButton, buttons));
         return ControlMessage.createInjectTouchEvent(action, pointerId, position, pressure, actionButton, buttons);
     }
 

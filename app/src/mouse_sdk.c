@@ -101,6 +101,18 @@ sc_mouse_processor_process_mouse_click(struct sc_mouse_processor *mp,
     if (!sc_controller_push_msg(m->controller, &msg)) {
         LOGW("Could not request 'inject mouse click event'");
     }
+//    else {
+//        LOGV("SC_CONTROL_MSG_TYPE_INJECT_TOUCH_EVENT: action = %d, pointer_id = %lld, screen width = %d, screen height = %d, position x = %d, position y = %d, pressure = %f, action_button = %d, buttons = %d",     (int)(convert_mouse_action(event->action)),
+//             event->pointer_id,
+//             event->position.screen_size.width,
+//             event->position.screen_size.height,
+//             event->position.point.x,
+//             event->position.point.y,
+//             event->action == SC_ACTION_DOWN ? 1.f : 0.f,
+//             (int)(convert_mouse_buttons(event->button)),
+//             (int)(convert_mouse_buttons(event->buttons_state))
+//        );
+//    }
 }
 
 static void
