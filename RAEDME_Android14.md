@@ -39,6 +39,12 @@ adb shell CLASSPATH=/data/local/tmp/scrcpy-server-manual.jar \
     raw_stream=true max_size=1920
 ```
 
-## Check new option from java/com/genymobile/scrcpy/Options.java
+## Check new option from java/com/genymobile/scrcpy/Options.java and change for [PlanForAndroidOnline](https://github.com/llv22/PlanForAndroidOnline/blob/develop/asynch/controller.py)
 
 Already updated with protocol for Android 2.4
+
+## Build for release
+
+```bash
+bash release.sh
+```
